@@ -1,4 +1,5 @@
 name: Print Env Variables
+branding: official
 
 inputs:
   environment:
@@ -18,3 +19,5 @@ runs:
       env:
         REPOSITORY_VAR: ${{ vars.HOST }}
         REPOSITORY_SEC: ${{ secrets.HOST_SECRET }}
+versions:
+  - v1
